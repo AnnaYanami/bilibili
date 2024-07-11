@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>sign in/sign up window</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>登录/注册</h2>
+    <div class="container" id="container">
+        <div class="form-container  sign-up-container">
+            <form action="">
+                <h1>注册</h1>
+                <div class="social-container">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>或使用上述方法注册</span>
+                <input type="text" placeholder="用户名">
+                <input type="email" placeholder="邮箱">
+                <input type="password" placeholder="密码">
+                <a href="#">用户须知</a>
+                <button>注册</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="">
+                <h1>登录</h1>
+                <div class="social-container">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>或使用这些账号登录</span>
+                <input type="text" placeholder="用户名">
+                <input type="password" placeholder="密码">
+<!--                <input type="text" placeholder="验证码">-->
+                <a href="#">忘记密码?</a>
+                <button>登录</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>欢迎来到哔哩哔哩!</h1>
+                <p>
+                    为了享受最顶尖的站内资源，请输入完整信息喵~
+                </p>
+                <button class="ghost" id="signIn">用户登录</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>欢迎回家！</h1>
+                <p>请输入你的相关信息来启程哦~</p>
+                <button class="ghost" id="signUp">用户注册</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <footer>
+        <p>
+            Create with<i class="fa fa-heart"></i>by
+            <a href="https://space.bilibili.com/499251072?spm_id_from=333.1007.0.0">Anna_Yanami</a>
+        </p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

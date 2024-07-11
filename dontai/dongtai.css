@@ -1,0 +1,654 @@
+.bili-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+.bili-nav .mask{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 16px 8px 6px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 38px;
+    background-image: linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%);
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+/* nav左侧入口区 */
+.left-entry {
+    display: flex;
+}
+
+.left-entry .entry-title {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    color: black;
+    /* 顶部栏左上角标签之间的间距 */
+    margin-right: 15px;
+}
+
+.left-entry .entry-title svg {
+    margin-right: 6px;
+
+}
+
+
+
+/* nav中间的搜索区域 */
+.center-search-container {
+    flex: 1;
+    height: 40px;
+    padding: 0 48px 0 4px;
+    border-radius: 8px;
+    border: 1px solid #e3e5e7;
+    background-color: #f1f2f3;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* 搜索框鼠标悬停效果制作 */
+.center-search-container:hover {
+    background-color: #fff;
+}
+
+.center-search-container .nav-search-content {
+    display: flex;
+    height: 20px;
+    width: 100%;
+    padding:0 8px;
+}
+
+.nav-search-content .nav-search-input {
+    flex: 1;
+    background-color: transparent;
+    line-height: 20px;
+    overflow: hidden;
+    padding-right: 8px;
+}
+
+.center-search-container .nav-search-button {
+    position: absolute;
+    top: 4px;
+    right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.center-search-container .nav-search-button:hover {
+    background-color: #e3e4e5;
+}
+
+/* nav右侧入口 */
+.right-entry{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+}
+
+.right-entry .header-avatar{
+    height: 50px;
+    width: 50px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.right-entry .header-avatar a {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 50%;
+    background-color: #00aeec;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid #fff; */
+    color: #fff;
+}
+
+.right-entry .right-entry-item {
+    min-width: 50px;
+    margin-right: 4px;
+}
+
+.right-entry .right-entry-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.right-entry-item a span{
+    font-size: 13px;
+}
+
+.right-entry .upload{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #fb7299;
+    margin-left: 10px;
+}
+
+.right-entry .upload span{
+    margin-left: 5px;
+}
+
+/* banner区域 */
+/* 重新给nav区域添加样式 */
+.bili-nav {
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+}
+
+.bili-banner {
+    position: relative;
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*推荐列表*/
+.main{
+    width:100% ;
+    padding: 0 60px;
+    box-sizing: border-box;
+    display: flex;
+    background: url("个人背景.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+.main .main-container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    /*background-color: #3c97bf;*/
+}
+
+.main-container .title{
+    width: 100%;
+    /*background-color: #FF80AB;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.title .bigtitle{
+    align-items: center;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+title .data-information{
+    display: flex;
+    align-items: center;
+}
+
+.title .data-information .stats-item{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    align-items: center;
+    margin-right: 12px;
+    font-size: 15px;
+    /*line-height: 10px;*/
+}
+
+.data-information svg{
+    width: 18px;
+    height: 18px;
+    align-items: center;
+    justify-content: center;
+    /*color: #fff;*/
+    color: #9499a0;
+    margin-right: 2px;
+    margin-top: 5px;
+    /*margin-top: 20px;*/
+}
+
+
+
+.main-container .picture img{
+    /*height: 200px;*/
+    /*width: 200px;*/
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    position: relative;
+}
+
+
+
+.main .author{
+    width: 30%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.author .author-information{
+    display: flex;
+    margin: 10px 20px ;
+    border-radius: 8px;
+    background-color: #ffffff;
+    height: 15vh;
+    background: url("动态背景.png");
+    background-position: center;
+}
+
+.author .author-information .picture img{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    padding: 10px 20px;
+}
+
+.author .author-information .name{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 5px;
+}
+
+.author .author-information .name .up-name .stats-item{
+    font-size: 20px;
+    font-weight: 5000;
+    color: #FF80AB;
+}
+
+.author .author-information .name .personal{
+    color: #9499a0;
+}
+
+.author .author-information .name .information{
+    margin-top: 8px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+.author .author-information .name .information .light{
+    width: 100%;
+    height: 2vw;
+    border: #FF80AB 2px solid;
+    display: flex;
+    /*padding: 0% 10%;*/
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #FF80AB;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.author .author-information .name .information .focus{
+    width: 30px;
+    height: 15px;
+    /*border: #9499a0 2px solid;*/
+    margin-left: 10%;
+    display: flex;
+    /*padding: 0% 10%;*/
+    padding: 4px;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #ff9212;
+}
+
+.main .author .danmu{
+    width: 100%;
+    height: 4vw;
+    /*padding: vw;*/
+    margin-left: 2vw;
+    margin-top: 2vw;
+    box-sizing: border-box;
+    right: 0;
+    display: flex;
+    align-items: center;
+    /*flex-direction: column;*/
+    background-color: #dddddd;
+    border-radius: 8px;
+}
+
+.main .author .danmu .stats-item{
+    flex: 1;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #9499a0;
+    margin-left: 1vw;
+}
+
+.main .author .danmu .fuhao{
+    margin-right: 1vw;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+
+.author .up-list{
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 10px 20px;
+}
+
+.author .up-list .wenzi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.author .up-list .wenzi .zhenwen{
+    flex: 1;
+    margin-left: 3vw;
+    margin-top: 1vw;
+    font-size: 20px;
+    font-weight:bold ;
+}
+
+.author .up-list .wenzi .right{
+    margin-right: 5px;
+    margin-top: 1vw;
+    color: #9499a0;
+}
+
+.main .author .following{
+    margin-top: 1vw;
+    display: flex;
+}
+
+.main .author .following .image img{
+    /*margin-left: 2vw;*/
+    /*padding: 1vw;*/
+    left: 3vw;
+    width: 8vw;
+    width: 4vw;
+    height: 4vw;
+    /*height: 5vw;*/
+    border-radius: 50%;
+    position: relative;
+    /*background-color: #FF80AB;*/
+    /*border-radius: 8px;*/
+}
+
+.main .author .following .information{
+    margin-left: 4vw;
+    display: flex;
+    flex-direction: column;
+    /*gap: 10px;*/
+}
+
+.main .author .following .information .title{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.main .author .following .information .up svg{
+    height: 15px;
+    width: 15px;
+}
+
+.main .author .following .information .up{
+    color: #9499a0;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.main .author .following .information .details{
+    color: #9499a0;
+    font-size: 15px;
+    margin-top: 5px;
+    /*margin-right: ;*/
+}
+
+.main .author .following .information .details svg{
+    height: 15px;
+    width: 15px;
+}
+
+
+/*右侧信息栏*/
+.main .right-information {
+    right: 2vw;
+    top: 2vw;
+    width: 30vw;
+}
+
+.main .right-information .society{
+    width: 100%;
+    background: url("社区.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin: 10px 20px ;
+    border-radius: 8px;
+    background-color: #ffffff;
+    height: 20vh;
+
+}
+
+.main .right-information .society img{
+    border-radius: 8px;
+}
+
+.main .right-information .topic{
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+.main .right-information .topic .wenzi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .right-information .topic .wenzi .zhenwen{
+    flex: 1;
+    margin-left: 3vw;
+    margin-bott1: 1vw;
+    font-size: 20px;
+    font-weight:bold ;
+    /*background-color:#FF80AB ;*/
+}
+
+.right-information .topic .following{
+    display: flex;
+    align-items: center;
+}
+
+.right-information .topic .following img{
+    width: 2vw;
+    height: 2vw;
+    margin-left: 3vw;
+    /*margin-top: 1vw;*/
+    border-radius: 50%;
+}
+
+.right-information .topic .following .information{
+    /*gap: 100px;*/
+    margin-left: 1vw;
+}
+
+.right-information .topic .following .information .title{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 1vw;
+}
+
+.right-information .topic .following .information .stats-item{
+    color: #9499a0;
+}
+
+.main .middle{
+    width: 40vw;
+    /*height: 30vh;*/
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.main .middle .header{
+    /*position: absolute;*/
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    /*width: 30vw;*/
+    height: 20vh;
+    margin: 10px 20px;
+    border-radius: 8px;padding: 1vw;
+    background: url("话题背景.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main .middle .header .huati{
+    display: flex;
+    flex-direction: column;
+}
+
+.main .middle .header .huati .choose{
+    width: 5vw;
+    height: 2vw;
+    background-color: #e2e5e7;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: #9499a0;
+    font-weight: bold;
+    margin-top: 1vw;
+    margin-bottom: 10px;
+}
+
+.main .middle .header .huati  .question{
+    font-size: 20px;
+    color: #9499a0;
+    font-weight: bold;
+}
+
+.main .middle .header .open .button{
+    width: 5vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00aeec;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-top: 6vh;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+.main .middle .new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    height: 20px;
+    margin: 10px 20px;
+    border-radius: 8px;padding: 1vw;
+    color: #00aeec;
+    font-weight: bold;
+}
+
+.main .middle .main-information{
+    display: flex;
+    /*width: 100%;*/
+    margin: 10px 20px;
+    /*width: 40vw;*/
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.main .middle .main-information .img {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 1vw;
+    background: url("头像1.png") no-repeat;
+    background-position: center ;
+    background-size: cover;
+}
+
+.main .middle .main-information .text{
+    display: flex;
+    flex-direction: column;
+}
+
+.main .middle .main-information .text .up-name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.main .middle .main-information .text .up-name .name{
+    display: flex;
+    align-items: center;
+    color: #FF80AB;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main .middle .main-information .text .up-name .data{
+    display: flex;
+    align-items: center;
+    color: #9499a0;
+    font-size: 10px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.main .middle .main-information .text .up-name .title{
+    display: flex;
+    align-items: center;
+    color:black;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+.main .middle .main-information .picture{
+    margin-top: 15px;
+    width: 500px;
+    height: 200px;
+    background-color:#FF80AB ;
+    background: url("动态封面1.png") no-repeat;
+    /*background-position: center ;*/
+    background-size: cover;
+}

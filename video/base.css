@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*文本显示正常，不加粗*/
+    font-weight: normal;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+/* a标签的样式制作 */
+a{
+    /* 取消默认的下划线 */
+    text-decoration: none;
+    /* 修改字体颜色 */
+    color: #000;
+    /* 接触相应文字时改变其图标 */
+    cursor: pointer;
+}
+
+body{
+    /* 网页的背景颜色 */
+    /* background-color: rgba(84, 184, 247, 0.404); */
+    /* 网页的字体设置 */
+    font-size: 14px;
+}
+
+input{
+    /* 消除搜索栏本身地边框 */
+    border: 0 none;
+    /* 消除鼠标点击搜索栏时产生的黑边 */
+    outline-style: none;
+}
+
+img{
+    vertical-align: middle;
+}
